@@ -36,7 +36,7 @@ def update
       
   private
   def message_params
-    params.require(:message).permit(:name, :body)
+    params.require(:message).permit(:age, :name, :body)
   end
   ## ここまで
 
