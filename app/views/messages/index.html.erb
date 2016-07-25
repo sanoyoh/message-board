@@ -8,8 +8,9 @@
       <span class="label label-info"><%= message.name %></span>
       <%= message.body %>
        (<%= link_to "edit" , edit_message_path(message) %>
-        <%= link_to "destroy" , message , method: :delete, date: { confirm: '削除してもよろしいですか？' }%>
+        <%= link_to "destroy" , message , method: :delete, data: { confirm: '削除してもよろしいですか？' } %>
        )
+      <span class="label label-info"><%= message.age %></span>
       <br>
     <% end %>
   </div>
@@ -18,3 +19,7 @@
 <% #部分テンプレートを読み込んでいる %>
 <%= render 'form' %>
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> challenge2

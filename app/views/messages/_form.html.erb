@@ -1,4 +1,9 @@
+<<<<<<< HEAD
 <%= form_for(@message, html: { class: "form-horizontal" }) do |f| %>
+=======
+
+  <%= form_for(@message, html: { class: "form-horizontal" }) do |f| %>
+>>>>>>> challenge2
 
   <% if @message.errors.present? %>
     <div class="alert alert-danger">
@@ -13,6 +18,7 @@
     </div>
   <% end %>
 
+<<<<<<< HEAD
     <div class="form-group">
         <label for="message_name" class="control-label col-md-2">名前:</label>
         <div class="col-md-10">
@@ -20,6 +26,23 @@
         </div>
     </div>
 
+=======
+
+    <div class="form-group">
+        <label for="message_age" class="control-label col-md-2">年齢:</label>
+        <div class="col-md-10">
+            <%= f.text_field :age, class: "form-control" %>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="message_name" class="control-label col-md-2">名前:</label>
+        <div class="col-md-10">
+            <%= f.text_field :name, class: "form-control" %>
+        </div>
+    </div>
+
+>>>>>>> challenge2
    <div class="form-group">
         <label for="message_body" class="control-label col-md-2">内容:</label>
         <div class="col-md-10">
@@ -27,9 +50,18 @@
         </div>
     </div>
     
+<<<<<<< HEAD
     
   <div class="col-md-4 col-md-offset-4">
   <%= f.submit class: "btn btn-sm btn-primary" %>
   </div>
 <% end %>
 
+=======
+  <div class="form-group">
+    <div class="col-md-10 col-md-offset-2">
+    <%= f.submit class: "btn btn-sm btn-primary" %>
+    </div>
+  </div>
+<% end %>
+>>>>>>> challenge2
